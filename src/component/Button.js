@@ -1,4 +1,5 @@
 import React from 'react'
+import { ColorPicker, useColor } from "react-color-palette";
 import { View, Text, TouchableOpacity, Stylesheet } from 'react-native'
 
 export function ButtonNew(props) {
@@ -57,34 +58,7 @@ export function ButtonNew2(props) {
     )
 }
 
-export function CancelButton(props) {
-    const {onPress, text} = props 
-    return (
-        <TouchableOpacity
-            style = {{
-                ...styles.button,
-                backgroundColor: '#f1000',
-            }}
-            onPress = { onPress }
-            >
 
-
-            <Text
-                style = {{
-                    ...styles.buttonText,
-                    color: '#f1f1f1',
-                    fontWeight: 'bold'
-                    
-                }}
-             >   
-                
-                { text }
-            </Text>
-        </TouchableOpacity>
-        
-        
-    )
-}
 
 const styles = Stylesheet.create({
 
