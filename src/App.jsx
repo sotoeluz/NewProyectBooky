@@ -2,7 +2,11 @@ import React from "react";
 import { LogoutButton } from "./Logout";
 import { LoginButton } from "./Login";
 import { Profile } from "./Profile";
-import Card from './components/Card';
+
+import Cards from './components/Cards';
+import './App.css';
+
+
 
 
 
@@ -37,6 +41,13 @@ function App() {
 }
 
 
-
+function App() {
+  return (
+    <div className="App">
+        <Cards />
+    </div>
+   
+  )
+}
 
 export default App; 
