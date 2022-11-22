@@ -1,8 +1,39 @@
 import React from "react";
+import { LogoutButton } from "./Logout";
+import { LoginButton } from "./Login";
+import { Profile } from "./Profile";
 
 
-export function App() {
-    return (<div>Hola mundo¡?¡?</div>)
 
+
+function App() {
+    const {isAuthenticated } = useAuth0();
+
+    return (
+        <div className="App">
+            <header className= "App-header">
+                
+               {isAuthenticated ? (
+               <>
+                <Profile />
+                <LogoutButton />
+               
+               </> 
+                ) : (
+                 <LoginButton/>
+                )}
+
+
+        
+            </header>
+
+
+        </div>
+
+
+    );
 
 }
+
+
+export default App; 
