@@ -2,6 +2,7 @@ import React from "react";
 import { LogoutButton } from "./Logout";
 import { LoginButton } from "./Login";
 import { Profile } from "./Profile";
+import Card from './components/Card';
 
 
 
@@ -34,6 +35,8 @@ function App() {
     );
 
 }
+
+
 
 
 export default App; 
